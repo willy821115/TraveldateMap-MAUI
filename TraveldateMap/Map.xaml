@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Microsoft.Maui.Controls.Maps;assembly=Microsoft.Maui.Controls.Maps"
+                xmlns:loc="clr-namespace:Microsoft.Maui.Devices.Sensors;assembly=Microsoft.Maui.Essentials"
+             xmlns:sensors="clr-namespace:Microsoft.Maui.Devices.Sensors;assembly=Microsoft.Maui.Essentials"
+             x:Class="TraveldateMap.MainPage">
+    <StackLayout x:Name="main">
+        <maps:Map x:Name="mappy" 
+                 IsShowingUser="True"
+                 >
+                <x:Arguments>
+                    <MapSpan>
+                        <x:Arguments>
+                            <sensors:Location>
+                                <x:Arguments>
+                                    <x:Double>25.046594883473322</x:Double>
+                                    <x:Double>121.51754463950009</x:Double>
+                                </x:Arguments>
+                            </sensors:Location>
+                            <x:Double>0.01</x:Double>
+                            <x:Double>0.01</x:Double>
+                        </x:Arguments>
+                    </MapSpan>
+                </x:Arguments>
+            <!--<maps:Map.Pins>
+                <maps:Pin Label="兒童新樂園"
+                      Address="11169台北市士林區承德路五段55號"
+                      Type="Place"
+                          MarkerClicked="Pin_MarkerClicked">
+                    <maps:Pin.Location>
+                        <sensors:Location>
+                            <x:Arguments>
+                                <x:Double>25.097466058695556</x:Double>
+                                <x:Double>121.51492915347542</x:Double>
+                            </x:Arguments>
+                        </sensors:Location>
+                    </maps:Pin.Location>
+                </maps:Pin>
+                <maps:Pin Label="故宮博物院"
+                      Address="111台北市士林區至善路二段221號"
+                      Type="Place"
+                          MarkerClicked="Pin_MarkerClicked">
+                    <maps:Pin.Location>
+                        <sensors:Location>
+                            <x:Arguments>
+                                <x:Double>25.10253025686747</x:Double>
+                                <x:Double>121.54844958112824</x:Double>
+                            </x:Arguments>
+                        </sensors:Location>
+                    </maps:Pin.Location>
+                </maps:Pin>
+            </maps:Map.Pins>-->
+
+        </maps:Map>
+    </StackLayout>
+
+
+</ContentPage>
